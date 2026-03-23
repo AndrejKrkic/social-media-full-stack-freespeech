@@ -1,33 +1,128 @@
-Projekat sadrži dve aplikacije radjene u Node.js-u i React-u. Sledi detaljan opis i redosled izvršavanja naredbi za uspešno pokretanje projekta.
-Koraci za pokretanje:
-1. Preuzeti projekat(u ZIP ili nekom drugom formatu), otpakovati ga i otvoriti u nekom podržanom okruženju(npr VS Code)
-2. Pokretanje backend Node.js aplikacije
-  2.1 Otvoriti novi terminal, uneti i izvršiti sledeće naredbe:
-   cd Backend
-   npm init
-   npm install
-   npm start
-4. Kreirati online MongoDb bazu, izvršiti izmene za putanju ka sopstvenoj bazi u .env fajlu, kao i JSON fajlu za migracije
-   3.1 Za izvršavanje migracija ka bazi otvoriti novi terminal, uneti i izvršiti sledeće naredbe:
-     3.1.1 za izvrsavanje efekta migracije:
-      migrate-mongo up
-     3.1.2 za poništavanje efekta migracije (rollback):
-     migrate-mongo down
-  
-5. Pokretanje frontend React aplikacije
-   4.1 Otvoriti novi terminal, uneti i izvršiti sledeće naredbe:
-   cd Frontend
-   cd myapp
-   npm install
-   npm start
-   
-Kratak opis funkcionalnosti:
-Aplikacija predstavlja primer društvene mreže. Korisnici mogu gledati sadržaj svojih prijatelja i ostavljati komentare ili reakcije na tom sadržaju. Svaki korisnik kreator ima svoj lični profil na kom takodje može podeliti svoja razmišljanja ili multimedijalni sadržaj. 
-Korisnik radi sigurnosti, pre nego što postane član naše društvene mreže mora ostaviti svoje kredencijale i napraviti nalog, nakon čega uspešno može da se uloguje na našu aplikaciju. Pored samog sadržaja drugih korisnika, može se videti lista prijatelja, lista online korisnika, reklamni sadržaj, obaveštenja o rodjendanima,trentno vreme i vremenska prognoza..
-Preko navigacionog meni bara lako se može preći sa početne na stranicu o profilu korisnika klikom na navigacione linkove, logo ili profilnu sliku. 
-Naša aplikacija, ukratko, omogućava deljenje sadržaja i interakciju izmedju korisnika. Ona treba da obezbedi uloge: administratora, korisnika kreatora i korisnika posetioca.
-Korisnik kreator ima uvid u listu prijatelja, može da pretražuje ostale korisnike, zapraćuje I odpraćuje ih. Ima mogućnost da postavlja I gleda sadržaj svojih prijatelja. Objavu može sadržati upload-ovanu fotografiju sa računara korisnika. Može da briše svoje objave, kao I da ostavlja reakcije.
-Korisnici u ulozi administratora, pored nabrojanih mogućnosti imaju dozvolu I da brišu objave svih korisnika u eventualnom slučaju nedozvoljenog sadržaja.
-Korisnici posetioci za razliku od korisnika kreatora nemaju mogućnost objavljivanja ličnog sadržaja. Oni imaju mogućnost ostavljanja reakcija, zapraćivanja, pretrage kao I gledanja sadžaja svojih prijatelja.
+# Social Media App - FreeSpeech
+
+This is the full-stack app with Node.js and React.js. The application allows users to create profile, create posts, follow other people and scroll through feed.
+------------------------------------------------------------------------
+
+## 🚀 Features
+
+-   User authentication (Login/Register)
+-   Upload images
+-   Follow people
+-   Like posts
+-   Customize your profile
+-   Scroll through feed
+
+------------------------------------------------------------------------
+
+## 🛠️ Tech Stack
+
+- React (with Hooks)
+- React Router DOM
+- Node.JS
+
+------------------------------------------------------------------------
+
+## ⚙️ Installation & Setup
+
+### 📋 Prerequisites
+
+Make sure you have the following installed:
+
+- Node.js (v16 or higher recommended)
+
+- npm (comes with Node.js) or Yarn
+
+### 🚀 Getting Started
+
+1. Clone the repository
+
+```git clone https://github.com/AndrejKrkic/social-media-full-stack-freespeech```
+
+2. Navigate to the project directory
+
+```cd hotel-reservation-frontend```
+
+3. Install dependencies
+
+```npm install```
+
+or (if using Yarn):
+
+```yarn install```
 
 
+### 🔧 Environment Configuration
+
+Create a .env file in the root of the project and add the following:
+
+```REACT_APP_API_URL=http://localhost:5000/api```
+
+> This should point to your backend API.
+
+
+### ▶️ Running the Application
+
+Start the development server:
+
+```npm start```
+
+or:
+
+```yarn start```
+
+The application will be available at:
+
+👉 http://localhost:3000
+
+------------------------------------------------------------------------
+
+## 📁 Project Structure
+
+DTO/ - Data Transfer Objects used for communication between layers
+
+assets/ - Static files (images, icons, fonts)
+
+components/ - Reusable UI components (buttons, cards, modals)
+
+pages/ - Application pages (Home, Login, Rooms, Reservations)
+
+services/ - API communication logic (HTTP requests)
+
+context/ - Global state management (React Context)
+
+hooks/ - Custom React hooks
+
+utils/ - Helper functions and utilities
+
+styles/ - Global styles and CSS files
+
+App.js - Main application component
+
+index.js - Application entry point
+
+------------------------------------------------------------------------
+## 📚 What I Learned
+
+- Building dynamic and responsive user interfaces using React.js
+
+- Structuring a scalable frontend architecture with reusable components
+
+- Creating fast server side app using Node.js
+
+- Managing application state using React hooks and Context API
+
+- Implementing routing
+
+- Integrating frontend with backend APIs and handling asynchronous data
+
+- Working with forms, validation, and user input handling
+
+- Handling authentication flows (login, registration, token usage)
+
+- Improving user experience through component reusability and clean UI structure
+
+------------------------------------------------------------------------
+
+## 📬 Contact
+
+LinkedIn: https://www.linkedin.com/in/andrej-krkic-862805265/
