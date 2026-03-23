@@ -1,6 +1,7 @@
 # Social Media App - FreeSpeech
 
 This is the full-stack app with Node.js and React.js. The application allows users to create profile, create posts, follow other people and scroll through feed.
+
 ------------------------------------------------------------------------
 
 ## 🚀 Features
